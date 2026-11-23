@@ -83,8 +83,8 @@
         .is-touch #v2Level { top: 4.8rem; font-size: 9.5px; }
         .is-touch .tb { box-shadow: 0 0 8px rgba(244, 63, 94, 0.28); background: rgba(15, 23, 42, 0.45); }
         .is-touch #tLook { z-index: 21; }
-        .is-touch #tStick { z-index: 31; }
-        .is-touch [data-act] { z-index: 31; }
+        .is-touch #tStick { z-index: 25; }
+        .is-touch [data-act] { z-index: 25; }
         .tb { position: absolute; border-radius: 50%; align-items: center; justify-content: center; text-align: center; font-weight: 800; font-size: 11px; color: #fff; background: rgba(15,23,42,.6); border: 2px solid rgba(253,224,71,.7); box-shadow: 0 0 14px rgba(244,63,94,.45); pointer-events: auto; touch-action: none; transition: transform .08s; display: flex; }
         #rotateHint { display: none; }
         @media (orientation: portrait) { .is-touch #rotateHint { display: flex; } }
@@ -148,7 +148,7 @@
         <div id="tStick" class="v2-touch fixed" style="left:14px;bottom:14px;width:96px;height:96px;border-radius:50%;background:rgba(255,255,255,.05);border:2px solid rgba(253,224,71,.4);pointer-events:auto;touch-action:none">
             <div id="tKnob" style="position:absolute;left:26px;top:26px;width:44px;height:44px;border-radius:50%;background:rgba(244,63,94,.55);border:2px solid #fde047;pointer-events:none"></div>
         </div>
-        <div class="v2-touch fixed" style="right:10px;bottom:10px;width:182px;height:176px;pointer-events:none">
+        <div class="v2-touch fixed" style="right:10px;bottom:10px;width:182px;height:176px;pointer-events:none;z-index:25">
             <div class="tb" data-act="fire" style="right:0;bottom:0;width:72px;height:72px;font-size:12px">TEMBAK</div>
             <div class="tb" data-act="slash" style="right:78px;bottom:0;width:50px;height:50px">TEBAS</div>
             <div class="tb" data-act="jump" style="right:0;bottom:78px;width:50px;height:50px">LOMPAT</div>
